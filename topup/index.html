@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>Topup</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h6>You can top-up via SMS by sending keyword TOPUP to special number 1155.</h6>
+    <h3>Configure SMS Top-Up</h3>
+    <p>Please select the top-up amount and configure your SMS Top-up here</p>
+    <h5>Select the SMS Top-Up amount</h5>
+    <div class="row">
+      <label class="radio-button">
+        <label class="radio-label">5&#x20AC;</label>
+        <input type="radio" class="radioBtn" name="flexRadio" id="flexRadioDefault1" onclick="EnableDisable(this)">
+        <span class="radio-control"></span>
+      </label>
+      <label class="radio-button">
+        <label class="radio-label">10&#x20AC;</label>
+        <input type="radio" class="radioBtn" name="flexRadio" id="flexRadioDefault1" onclick="EnableDisable(this)">
+        <div class="radio-control"></div>
+       </label>
+      <label class="radio-button">
+        <label class="radio-label">30&#x20AC;</label>
+        <input type="radio" class="radioBtn" name="flexRadio" id="flexRadioDefault1" onclick="EnableDisable(this)">
+        <div class="radio-control"></div>
+        
+      </label>
+      <label class="radio-button">
+        <label class="radio-label">50&#x20AC;</label>
+        <input type="radio" class="radioBtn" name="flexRadio" id="flexRadioDefault1" onclick="EnableDisable(this)">
+        <div class="radio-control"></div>
+        
+      </label>
+    </div>
+
+    <p class="text">you are about to Top-Up 0 &#x20AC; to your prepaid number 0309829335.</p>
+    <hr class="hl" />
+
+    <input class="button" type="submit" value="Back">
+    <button type="button" disabled class="btn btn-outline-primary" id="btnsubmit">Next</button>
+
+  </div>
+
+
+</body>
+
+</html>

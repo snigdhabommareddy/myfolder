@@ -1,0 +1,209 @@
+
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  
+}
+
+
+.heading{
+    color:  #0384da;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.text,.sim{
+    color: #0099ff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-select{
+    height:65px;
+}
+.sim{
+    margin-top: -15px;
+}
+.line{
+    color:#0384da;
+}
+.button{
+    width:25%;
+    background-color: #0384da;
+    color:white;
+    border:1px solid lightgrey;
+    font-weight: bold;
+}
+.box{
+    height:500px;
+    border:1px solid lightgray;
+    border-radius: 1px;
+}
+.color{
+    height:55%;
+    background-color:#ecf3f8;
+}
+
+.triangle-bottomright {
+    position: relative;
+    top:20%;
+    left:20%;
+    width: 50px;
+    height: 70px;
+    border-left: 50px solid #057ac9 ;
+    border-right: 30px solid rgb(221, 220, 220);
+    clip-path: polygon( 100% 0%,100% 100%, 0% 100%);
+    
+}
+.triangle-bottomright2 {
+    position: relative;
+    top:20%;
+    left:20%;
+    width: 50px;
+    height: 70px;
+    border-left: 30px solid #057ac9 ;
+    border-right: 50px solid rgb(221, 220, 220);
+    clip-path: polygon( 100% 0%,100% 100%, 0% 100%);
+    
+}
+.triangle-bottomright3{
+    position: relative;
+    top:20%;
+    left:20%;
+    width: 50px;
+    height: 70px;
+    border-left: 36px solid #057ac9 ;
+    border-right: 40px solid rgb(221, 220, 220);
+    clip-path: polygon( 100% 0%,100% 100%, 0% 100%);
+    
+}
+.triangle-bottomright4{
+    position: relative;
+    top:20%;
+    left:20%;
+    width: 50px;
+    height: 70px;
+    border-left: 70px solid #057ac9 ;
+    border-right: 30px solid rgb(221, 220, 220);
+    clip-path: polygon( 100% 0%,100% 100%, 0% 100%);
+    
+}
+.triangle-bottomright5{
+    position: relative;
+    top:20%;
+    left:17%;
+    width: 50px;
+    height: 70px;
+    border-left: 70px solid #057ac9 ;
+    border-right: 30px solid rgb(221, 220, 220);
+    clip-path: polygon( 100% 0%,100% 100%, 0% 100%);
+    
+}
+.triangle-bottomright1 {
+    width: 0;
+    height: 0;
+    border-bottom: 70px solid #057ac9 ;
+    border-left: 70px solid transparent;
+    margin-left: 35%;
+    margin-top: 20%;
+}
+.head{
+    position:relative;
+    top:4%;
+    color:#0384da;
+}
+.number{
+    font-size: 50px;
+    color:  #057ac9;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:900;
+}
+.lte{
+    margin-top: -7px;
+    color:#0384da;
+}
+.gb{
+    color:#0384da;
+}
+.link{
+    color:rgb(103, 65, 190) !important;
+}
+.cent{
+    margin-top: 60px;
+}
+.num{
+    font-size: 25px;
+    color:  #057ac9;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:900;
+    margin-top: -10px;
+}
+.euro{
+    margin-top: -10px;
+    font-size: 12px;
+}
+.euro1{
+    font-size: 12px;
+    margin-top: -5px;
+}
+.numb{
+    font-size: 40px;
+    color:  #057ac9;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:900;
+    margin-top: -20px;
+}
+.nine1{
+    margin-top: -7px;
+    font-size: 17px;
+}
+.nine{
+    font-size: 15px;
+    margin-top: -10px;
+}
+.weeks{
+    margin-top: -20px;
+}
+.fee{
+    margin-top: -15px;
+    font-size: 15px;
+}
+.button1{
+    color:white;
+    background-color: #036fb8;
+    width:88% !important;
+    height:40px;
+    border:1px solid lightgrey;
+}
+.fa-file-pdf-o{
+    color:#0384da;
+}
+.swiper-button-prev,.swiper-button-next{
+    color:rgb(103, 65, 190) !important; 
+    top:80% !important;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color:rgb(116, 46, 173) !important;
+    height:7px !important;
+    width:25px !important;
+    border-radius: 35% !important;
+}
+span.swiper-pagination-bullet{
+   background-color:rgb(116, 46, 173);
+}
+@media screen and (max-width:500px){
+    .button{
+        width:50%;
+    }
+}
+@media screen and (max-width:800px){
+    .pre-btn{
+        top:55%;
+    }
+    .nxt-btn{
+        top:55%;
+    }
+}

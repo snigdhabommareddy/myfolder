@@ -1,0 +1,13 @@
+$primary-color:rgb(240, 240, 240);
+$font:Verdana, Geneva, Tahoma, sans-serif;
+$fweight: bold;
+$size:x-small;
+$fsize:small;
+$widthandheight:15px;
+$display:block;
+$width-height:7px;
+
+@mixin important-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}

@@ -1,0 +1,39 @@
+*{
+    font-family:sans-serif;
+}
+.from{
+ font-size: small;
+}
+.box{
+    border:2px solid lightgrey;
+    border-radius: 3px;
+}
+.button2 {
+    background-color: white;
+    border:none;
+}
+td:nth-child(even) {
+    border-top:1px solid #ccc;
+}
+
+@media screen and (max-width:500px){
+    .table thead{
+        display:none;
+    }
+    .third,.second{
+        font-weight: bold;
+    }
+    .second{
+        border-top: 0px !important;
+        margin-top: -50px;
+       
+    }
+    .first{
+        font-size:x-small;
+        padding-top: 20px !important;
+    }
+    .bold{
+        display:flex;
+    }
+   
+}

@@ -1,0 +1,136 @@
+@import "./variables";
+
+h6{
+    @include important-text;
+    background-color: rgb(245, 244, 244);
+    border-radius: 3px;
+    margin-top: 30px;
+    padding:10px;
+    font-weight:$fweight;
+    margin-bottom: 50px;
+}
+h3{
+    font-family: $font;
+    margin-bottom: 20px;
+}
+p{
+    @include important-text;
+    margin-bottom: 30px;
+}
+h5{
+    @include important-text;
+    font-weight: $fweight;
+    margin-bottom: 20px;
+}
+.row{
+    margin-left: 3px;
+}
+.radio-button{
+    width:130px;
+    height:100px;
+    background-color: $primary-color;
+    margin-right:10px;
+    text-align: center;
+}
+.radio-label{
+    font-weight:$fweight;
+    font-size:$fsize;
+    
+}
+label{
+    display:$display;
+    line-height: 45px;
+}
+input[type="radio"]{
+   display:none;
+}
+.radio-control{
+    width:$widthandheight;
+    height:$widthandheight;
+    border:1px solid #222;
+    border-radius: 50%;
+    display:inline-block;
+    
+ &::after{
+    content:"";
+    width:$width-height;
+    height:$width-height;
+    display:$display;
+    background-color: #222;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    transform: scale(0);
+   }
+}
+input[type="radio"]:checked+.radio-control::after{
+    transform: scale(1);
+}
+
+.text{
+    background-color: $primary-color;
+      width:450px;
+      font-size:$size;
+      padding:10px;
+      font-weight:$fweight;
+      margin-bottom: 50px;
+      margin-top: 30px;
+}
+.button{
+     background-color: white;
+     border: 1px solid rgb(15, 123, 224);
+     color:rgb(15, 123, 224);
+     padding:5px;
+     width:100px;
+     border-radius: 3px;
+     margin-top: 20px;
+} 
+.btn-outline-primary{
+     margin-left: 900px;
+     width:100px;
+}
+.hl{
+     color:rgb(141, 140, 140);
+}
+@media only screen and(max-width:320px){
+    .btn-outline-primary{
+        margin:0;
+        width:280px;
+        margin-bottom: 100px;
+        display:$display;
+        
+    }
+    &.button{
+        background-color: white;
+        border: 1px solid rgb(15, 123, 224);
+        color:rgb(15, 123, 224);
+        margin-bottom: 20px;
+        width:280px;
+        
+    }
+    &.hl{
+        display:none;
+    }
+    & .text{
+        width:290px;
+         margin-bottom: 60px;
+         margin-top: 20px;
+      }
+    &  h6{
+        width:290px;
+        font-size:$size;
+        margin-bottom: 30px;
+    }
+    &  p{
+        font-size:$size;
+        margin-bottom: 20px;
+     }
+    & h3{
+        margin-bottom: 10px;
+        font-size:x-large;
+   }
+   &.card{
+    margin-bottom: 15px;
+    
+}
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Topup</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-4 dnone d-sm-block"></div>
+            <div class="col-sm-8 ">
+                <div class="box d-flex flex-md-row mb-4">
+                    <i class="fas fa-check ml-3 mt-2"></i>
+                    <div class="ml-4 mt-1 mb-2"> Configured Succesfully.</div>
+                    <i class="fas fa-times mt-2 ml-auto mr-4"></i>
+                </div>
+                <h4>Instant Top-Up</h4>
+                <div class="instant-topup d-flex flex-column flex-md-row mt-3">
+                    <i class="far fa-image fa-2x ml-3 mt-3 mr-2 d-flex justify-content-center justify-content-md-start"
+                        aria-hidden="true"></i>
+                    <p class="topup mt-4 text-center text-sm-left">You can instantly topup your balance via your payment
+                        method.</p>
+                    <div class="ml-md-auto Button d-flex justify-content-center py-3 mr-2"><button
+                            class="btn px-3">Top-Up Now</button></div>
+                </div>
+                <div class="instant-topup d-flex flex-column flex-md-row mt-3 mb-5">
+                    <i class="far fa-image fa-2x ml-3 mt-3 mr-2 d-flex justify-content-center justify-content-md-start"
+                        aria-hidden="true"></i>
+                    <p class="topup mt-4 text-center text-sm-left">Topup your account directly by entering your voucher
+                        code.</p>
+                    <div class="ml-md-auto Button d-flex justify-content-center py-3 mr-2" >
+                        <button onclick="popup()" class="btn px-3" id="choclate">Top-Up Balance</button>
+                    </div>
+                </div>
+                <h4> Set-up SMS Topup</h4>
+                <div class="instant-topup d-flex flex-column flex-md-column">
+                    <div class="d-flex flex-column flex-md-row mt-3">
+                        <i class="far fa-image fa-2x ml-3 mt-3 mr-2 d-flex justify-content-center justify-content-md-start"
+                            aria-hidden="true"></i>
+                        <p class="sms mt-4 text-center text-sm-left ">Send an SMS with keyword "TOPUP" to the special
+                            number 123456.</p>
+                        <div class="ml-auto mr-2 mt-2 d-none d-sm-block">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                    <p class="sms ml-md-5 text-sm-left mt-2 pl-2"><b>SMS Top-Up Amount</b><b class="ml-4 text-sm-left">10&euro;.</b> </p>
+                        <div class="ml-auto mr-2 mt-2 d-sm-block d-md-none">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                   
+                    <p class="topup-amount ml-md-5 text-sm-left pb-4 w-75 ml-2"><a href="#"><u>Change Top-up Amount</u></a></p>
+                   
+                    <p class="ml-md-5 text-sm-left mt-3 pl-2"><b>Payment</b></p>
+                    <p class=" sms ml-md-5 text-sm-left pl-2">Direct debit is used as payment method with following bank
+                        account:</p>
+                    <p class="sms ml-md-5 text-sm-left d-flex flex-column flex-md-row pl-2"><b class="mr-3">IBAN
+                            Number:</b>DE2850010517397152XXXX</p>
+                    <p class="sms ml-md-5 text-sm-left d-flex flex-column flex-md-row pl-2"><b class="mr-5">Bank:</b>Deutsche
+                        Bank</p>
+                    <p class="sms ml-md-5 text-sm-left d-flex flex-column flex-md-row pl-2"><b class="mr-3">Account Owner
+                            Name:</b>John Smith</p>
+                    <p class="ml-md-5 text-sm-left mt-2 mb-5 pl-2"><a href="#"><u>Change Payment Methods</u></a></p>
+                </div>
+                <h4 class="mt-5">Automatic Top-Up</h4>
+                <div class="instant-topup d-flex flex-column flex-md-row mt-3 mb-5">
+                    <i class="far fa-image fa-2x ml-3 mt-3 mr-2 d-flex justify-content-center justify-content-md-start"
+                        aria-hidden="true"></i>
+                    <p class="topup mt-4 text-center text-sm-left">Automatic top-up for date and/or threshold.</p>
+                    <div class="ml-md-auto Button d-flex justify-content-center py-3 mr-2"><button
+                            class="btn px-3">Configure Auto Top-Up</button></div>
+                </div>
+                <p class="mt-5">The <a href="#">Terms of use</a> for payment via direct debit apply</p>
+                <div class="d-flex flex-column flex-md-row">
+                <button type="button" class="btn btn-outline-primary mt-4 mb-5">Back</button>
+            </div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <button onclick="closed()" class="close">&times;</button>
+                <i class="far fa-clock fa-2x"></i>
+                <h4>Loading...</h4>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
